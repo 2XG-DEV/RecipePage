@@ -256,6 +256,10 @@ table th {
     border-radius: var(--spacing-300, 1.5rem);
   }
 
+  .container {
+    padding: 0;
+  }
+
   body {
     display: flex;
     padding: var(--spacing-1600, 8rem) var(--spacing-600, 3rem);
