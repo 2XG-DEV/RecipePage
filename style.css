@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
+  background: var(--color-stone-100, #f3e5d7);
+}
+
+/* Make images easier to work with */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  html {
+    scroll-behavior: initial;
+  }
+}
+
+:root {
+  --color-rose-800: #7a284e;
+  --color-rose-50: #fff7fb;
+  --color-stone-900: #312e2c;
+  --color-stone-600: #5f564d;
+  --color-stone-150: #e3ddd7;
+  --color-stone-100: #f3e5d7;
+  --color-brown-800: #854632;
+  --color-white: #fff;
+
+  --font-size-desktop-text-preset-1: 2.5rem;
+  --font-size-desktop-text-preset-2: 1.75rem;
+  --font-size-desktop-text-preset-3: 1.25rem;
+  --font-size-desktop-text-preset-4: 1rem;
+
+  --spacing-1600: 8rem;
+  --spacing-600: 3rem;
+  --spacing-500: 2.5rem;
+  --spacing-400: 2rem;
+  --spacing-300: 1.5rem;
+  --spacing-200: 1rem;
+  --spacing-150: 0.75rem;
+  --spacing-100: 0.5rem;
+}
+
+.text-1 {
+  color: var(--color-stone-900, #312e2c);
+
+  font-family: "Young Serif";
+  font-size: var(--font-size-desktop-text-preset-1, 2.5rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.text-2 {
+  color: var(--color-stone-600, #5f564d);
+
+  font-family: "Young Serif";
+  font-size: var(--font-size-desktop-text-preset-2, 1.75rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.text-3 {
+  color: var(--color-stone-600, #5f564d);
+
+  font-family: Outfit;
+  font-size: var(--font-size-desktop-text-preset-3, 1.25rem);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.text-4 {
+  color: var(--color-stone-600, #5f564d);
+
+  font-family: Outfit;
+  font-size: var(--font-size-desktop-text-preset-4, 1rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.text-4-bold {
+  color: var(--color-stone-600, #5f564d);
+
+  font-family: Outfit;
+  font-size: var(--font-size-desktop-text-preset-4, 1rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.text-rose-800 {
+  color: var(--color-rose-800, #7a284e);
+}
+
+.text-brown-600 {
+  color: var(--color-stone-600, #5f564d);
+}
+
+.text-brown-800 {
+  color: var(--color-brown-800, #854632);
+}
+
+.container {
+  display: flex;
+  padding: var(--spacing-500, 2.5rem) var(--spacing-400, 2rem);
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-400, 2rem);
+  align-self: stretch;
+
+  background-color: var(--color-white, #fff);
+}
+
+hr {
+  color: var(--color-stone-150, #e3ddd7);
+  background-color: var(--color-stone-150, #e3ddd7);
+  border-width: 0;
+  height: 0.0625rem;
+  width: 100%;
+}
+
+.spacing-300 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-300, 1.5rem);
+  align-self: stretch;
+}
+
+.spacing-200 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-200, 1rem);
+  align-self: stretch;
+}
+
+.spacing-100 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--spacing-100, 0.5rem);
+  align-self: stretch;
+}
+
+.padding-300 {
+  padding: var(--spacing-300, 1.5rem);
+}
+
+.preparation-time {
+  border-radius: var(--spacing-150, 0.75rem);
+  background: var(--color-rose-50, #fff7fb);
+}
+
+.ml-300 {
+  margin-left: var(--spacing-300, 1.5rem);
+}
+
+.preparation-time li::marker {
+  color: var(--color-rose-800, #7a284e);
+}
+
+li::marker {
+  color: var(--color-brown-800, #854632);
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+table td {
+  color: var(--color-brown-800, #854632);
+  font-family: Outfit;
+  font-size: var(--font-size-desktop-text-preset-4, 1rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+table tr {
+  border-bottom: 1px solid var(--color-stone-150, #e3ddd7);
+  padding: var(--spacing-200, 1rem);
+}
+
+table th {
+  color: var(--color-stone-600, #5f564d);
+
+  font-family: Outfit;
+  font-size: var(--font-size-desktop-text-preset-4, 1rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+table td,
+table th {
+  padding: var(--spacing-150, 0.75rem);
+}
+
+@media only screen and (min-width: 48rem) {
+  .wrapper {
+    display: flex;
+    max-width: 46rem;
+    padding: var(--spacing-500, 2.5rem);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-500, 2.5rem);
+    flex: 1 0 0;
+    background-color: var(--color-white, #fff);
+    border-radius: var(--spacing-300, 1.5rem);
+  }
+
+  body {
+    display: flex;
+    padding: var(--spacing-1600, 8rem) var(--spacing-600, 3rem);
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-100, 0.5rem);
+  }
+
+  .recipe-image {
+    border-radius: var(--spacing-150, 0.75rem);
+  }
+}
